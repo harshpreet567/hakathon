@@ -1,1 +1,2 @@
-# hakathon
+# Eunoia
+Ambient Intelligence Platform
