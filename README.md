@@ -1,5 +1,6 @@
 # Eunoia
 It ia an Ambient Intelligence Platform
+
 Making Your Workspace Smarter with AI
 
 # What is Eunoia?
