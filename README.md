@@ -1,6 +1,5 @@
 # Eunoia
-Ambient Intelligence Platform
-
+It ia an Ambient Intelligence Platform
 Making Your Workspace Smarter with AI
 
 # What is Eunoia?
@@ -102,20 +101,42 @@ If it's late at night, nobody is near the desk, but electronics are still runnin
 
 ---
 
-# Hardware Used
+# System Architecture
 
-Component| Purpose
-Arduino Uno| Controls the hardware
-Temperature Sensor| Measures temperature
-Motion Sensor| Detects movement
-Light Sensor| Measures light level
-Current Sensor| Detects power usage
-Relay Module| Switches devices ON or OFF
-LEDs| Shows system status
+
+              Smartphone
+        (Location & Context)
+                 |
+                 |
+                 ▼
+   Snapdragon PC (AI Decision Engine)
+                 ▲
+                 |
+                 |
+ Arduino Smart Desk Node
+(Sensors + Relay + LEDs)
+                 |
+                 ▼
+          Physical Workspace
+
 
 ---
 
-# Software Used
+## Hardware Components
+
+| Component | Purpose |
+|----------|---------|
+| Arduino Uno | Reads sensor data and controls hardware |
+| Temperature Sensor | Detects overheating |
+| Motion Sensor | Detects human presence |
+| Light Sensor | Measures ambient light |
+| Current Sensor | Measures power consumption |
+| Relay Module | Turns electrical devices ON/OFF |
+| LEDs | Indicates system status |
+
+---
+
+# Softtware Used
 
 - Arduino IDE
 - Python
