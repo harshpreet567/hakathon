@@ -1,155 +1,143 @@
 # Eunoia
-An Ambient Intelligence Platform, AI - powered smart workspace that understands situations and coordinates your devices automatically.
+Ambient Intelligence Platform
 
-# Project Overview
-Eunoia is an Ambient Intelligence platform designed to create a smart and responsive workspace. Instead of waiting for user commands, Eunoia continuously monitors the environment using sensors, understands the current situation with AI and coordinates connected devices to improve safety, productivity and convenience.
-The system integrates an arduino-based Smart Desk Node, a Snapdragon-powered PC as the AI Decision Engine, a smartphone for user context and cloud storage for history and synchronization.
+Making Your Workspace Smarter with AI
 
-# Problem Statement
-Students and professionals often leave prototypes, charges or electronic devices running unattended. This can Lead to:
-1. Power wastage
-2. Overheating
-3. Hardware damage
-4. Safety risks
-5. Reduced productivity
+# What is Eunoia?
 
-Current assistants require manual commands and do not understand real-world situations.
+Eunoia is an AI-powered smart workspace that helps take care of your desk even when you're not there.
 
-# Solution
+Imagine you're working on an Arduino project. You leave your room for dinner and accidentally forget to switch off your prototype. Normally, it would keep running, waste electricity, and might even overheat.
 
-Nexus enables Ambient Intelligence by continuously collecting information from multiple sources and making intelligent decisions automatically.
+Eunoia notices what's happening, understands the situation, and helps prevent problems before they become serious.
 
-The AI combines:
-- Sensor data from the Smart Desk Node
-- User context from the smartphone
-- Workspace activity from the PC
-
-Based on this information, Nexus detects situations and responds appropriately.
+Instead of waiting for you to give commands, Eunoia continuously observes the workspace and makes smart decisions.
 
 ---
 
-## System Architecture
+# The Problem
 
+Students and engineers often get busy while working on projects.
 
-              Smartphone
-        (Location & Context)
-                 |
-                 |
-                 ▼
-   Snapdragon PC (AI Decision Engine)
-                 ▲
-                 |
-                 |
- Arduino Smart Desk Node
-(Sensors + Relay + LEDs)
-                 |
-                 ▼
-          Physical Workspace
+Sometimes we:
 
+- Forget to switch off our prototype.
+- Leave the laptop unlocked.
+- Leave chargers or electronic devices running.
+- Don't notice when a device is getting too hot.
+
+These small mistakes can waste electricity, damage hardware, or even become safety risks.
 
 ---
 
-## Hardware Components
+# Our Solution
 
-| Component | Purpose |
-|----------|---------|
-| Arduino Uno | Reads sensor data and controls hardware |
-| Temperature Sensor | Detects overheating |
-| Motion Sensor | Detects human presence |
-| Light Sensor | Measures ambient light |
-| Current Sensor | Measures power consumption |
-| Relay Module | Turns electrical devices ON/OFF |
-| LEDs | Indicates system status |
+Eunoia connects your Arduino Smart Desk Node, Snapdragon PC, and smartphone into one intelligent system.
+
+Each device has a different job:
+
+- Arduino collects information from sensors.
+- Sensors monitor the environment.
+- Snapdragon PC acts as the brain and decides what should happen.
+- Phone tells the system whether you're present or have left.
+- Cloud stores previous events and system history.
+
+All these devices work together to make your workspace safer and smarter.
 
 ---
 
-# Software & Technologies
+# How Eunoia Works
+
+1. The sensors keep checking the workspace all the time.
+2. Arduino collects the sensor readings.
+3. Your phone tells the system whether you're near your desk or have left.
+4. The Snapdragon PC receives all this information.
+5. The AI understands the complete situation.
+6. It decides the best action.
+7. If needed, it sends you a notification.
+8. Arduino performs the action, such as turning OFF a relay or changing an LED.
+9. The event is saved to the cloud.
+
+---
+
+# Main Features
+
+1. Forgotten Prototype Detection
+
+Suppose you leave your room while your Arduino project is still running.
+
+Eunoia notices that:
+
+- There is no movement near the desk.
+- Your phone has left the room.
+- The prototype is still consuming power.
+
+It sends you a notification asking whether you'd like to turn it off. If you agree, the relay automatically disconnects the power.
+
+---
+
+2. Hardware Emergency
+
+If the temperature becomes too high or the current suddenly increases, Nexus detects that something may be wrong.
+
+The system immediately turns off the power using the relay and alerts the user to help prevent damage.
+
+---
+
+3. Deep Work Mode
+
+When you start coding on your laptop, Eunoia can recognize that you're working.
+
+It can:
+
+- Enable Focus Mode on your phone.
+- Reduce distractions.
+- Change the desk LED to show you're in work mode.
+
+---
+
+4. Night Protection
+
+If it's late at night, nobody is near the desk, but electronics are still running, Nexus automatically switches them off to save power and improve safety.
+
+---
+
+# Hardware Used
+
+Component| Purpose
+Arduino Uno| Controls the hardware
+Temperature Sensor| Measures temperature
+Motion Sensor| Detects movement
+Light Sensor| Measures light level
+Current Sensor| Detects power usage
+Relay Module| Switches devices ON or OFF
+LEDs| Shows system status
+
+---
+
+# Software Used
 
 - Arduino IDE
 - Python
-- Git & GitHub
+- GitHub
 - AI Decision Engine
-- Wi-Fi / Bluetooth Communication
-- Cloud Storage
-
-# Working
-
-1. Sensors monitor the workspace.
-2. Arduino collects sensor readings.
-3. Smartphone provides user context.
-4. Arduino sends data to the Snapdragon PC.
-5. AI analyzes all available information.
-6. AI identifies the current situation.
-7. The appropriate action is selected.
-8. Arduino executes the command using the relay or LEDs.
-9. The user receives a notification.
-10. Event history is stored in the cloud.
+- Wi-Fi/Bluetooth Communication
 
 ---
 
-## Features
+# Future Improvements
 
-### Forgotten Prototype Detection
-
-- Detects when the user leaves while the prototype is still running.
-- Sends a notification.
-- Turns OFF the prototype through the relay after confirmation.
-
-### Hardware Emergency Detection
-
-- Detects abnormal temperature or current.
-- Predicts possible hardware failure.
-- Disconnects power automatically.
-
-### Deep Work Mode
-
-- Detects coding activity.
-- Enables Focus Mode on the phone.
-- Changes desk LED status.
-
-### Night Protection
-
-- Detects unattended electronics during late hours.
-- Automatically disconnects unnecessary power.
-
----
-
-## Demo Scenarios
-
-### Demo 1
-Forgotten Prototype Detection
-
-### Demo 2
-Hardware Emergency Detection
-
-### Demo 3
-Deep Work Mode
-
----
-
-## Setup Instructions
-
-1. Clone this repository.
-2. Install Arduino IDE.
-3. Upload the Arduino program.
-4. Install required Python dependencies.
-5. Connect the Arduino to the PC.
-6. Run the AI application.
-7. Connect the smartphone to the same network.
-
----
-
-## Future Scope
+In the future, Eunoia can be expanded to:
 
 - Smart laboratories
-- Multi-desk coordination
+- Multiple smart desks
 - Predictive maintenance
-- Voice assistant integration
-- Energy optimization
+- Voice control
+- Better energy management
 
 ---
 
-## Team Members
+# Team Members
 
 Akshita: vermaakshita856@gmail.com
 Harshpreet: harshpreetsajjan@gmail.com
@@ -158,6 +146,16 @@ Ashwikka: ashwikkasingh@gmail.comName
 
 ---
 
-## License
+# Setup
+
+1. Clone this repository.
+2. Upload the Arduino code.
+3. Install the required software and libraries.
+4. Connect the Arduino to the PC.
+5. Run the AI application.
+6. Test the demo scenarios.
+
+---
+# License
 
 This project is licensed under the MIT License.
