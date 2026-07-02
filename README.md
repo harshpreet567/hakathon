@@ -161,13 +161,13 @@ In the future, Eunoia can be expanded to:
 
 # Team Members
 
-Akshita: vermaakshita856@gmail.com
+Akshita Verma: vermaakshita856@gmail.com
 
-Ashwikka: ashwikkasingh@gmail.com
+Ashwikka Singh: ashwikkasingh@gmail.com
 
-Harshpreet: harshpreetsajjan@gmail.com
+Harshpreet Kaur: harshpreetsajjan@gmail.com
 
-Saanvi: Saanvidheer12@gmail.com
+Saanvi Dheer: Saanvidheer12@gmail.com
 
 ---
 
