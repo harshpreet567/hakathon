@@ -10,4 +10,5 @@ Students and professionals often leave prototypes, charges or electronic devices
 3. Hardware damage
 4. Safety risks
 5. Reduced productivity
+
 Current assistants require manual commands and do not understand real-world situations.
