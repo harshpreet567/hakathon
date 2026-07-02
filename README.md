@@ -107,17 +107,23 @@ If it's late at night, nobody is near the desk, but electronics are still runnin
 
               Smartphone
         (Location & Context)
+        
                  |
                  |
                  ▼
+                 
    Snapdragon PC (AI Decision Engine)
+   
                  ▲
                  |
                  |
+                 
  Arduino Smart Desk Node
 (Sensors + Relay + LEDs)
+
                  |
                  ▼
+                 
           Physical Workspace
 
 
