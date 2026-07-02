@@ -163,7 +163,7 @@ In the future, Eunoia can be expanded to:
 
 Akshita: vermaakshita856@gmail.com
 
-Ashwikka: ashwikkasingh@gmail.comName 
+Ashwikka: ashwikkasingh@gmail.com
 
 Harshpreet: harshpreetsajjan@gmail.com
 
