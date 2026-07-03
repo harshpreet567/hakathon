@@ -5,7 +5,7 @@ from app.schemas.schemas import SensorReadingIn, SystemSettingsUpdate
 from app.engine.situation_engine import SituationEngine
 from app.utils.state_manager import AppStateManager
 
-class PulseService:
+class EunoiaService:
     """Coordinates Clean Architecture patterns across repositories and engines."""
 
     @staticmethod
