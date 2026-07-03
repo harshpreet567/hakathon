@@ -16,13 +16,13 @@ router = APIRouter()
 @router.post("/sensor-data", response_model=AlertItemOut, status_code=status.HTTP_201_CREATED)
 def post_sensor_data(reading: SensorReadingIn, db: Session = Depends(get_db)):
     """Accepts data inputs from connected microcontrollers and outputs active anomalies."""
-    alert_log = PulseService.ingest_telemetry(db, reading)
+    alert_log = EunoiaService.ingest_telemetry(db, reading)
     return alert_log
 
 @router.get("/dashboard", response_model=DashboardResponse)
 def get_dashboard(db: Session = Depends(get_db)):
     """Returns combined status updates for display dashboards."""
-    return PulseService.get_dashboard(db)
+    return EunoiaService.get_dashboard(db)
 
 @router.get("/alerts", response_model=List[AlertItemOut])
 def get_alerts(db: Session = Depends(get_db)):
@@ -47,19 +47,18 @@ def get_history(db: Session = Depends(get_db)):
 @router.get("/devices", response_model=List[DeviceInfoOut])
 def get_devices():
     """Maps linked node identities across the active workspace mesh layer."""
-    return PulseService.get_static_devices()
-
+    return EunoiaService.get_static_devices()
 @router.get("/settings", response_model=SystemSettingsOut)
 def get_settings(db: Session = Depends(get_db)):
     """Exposes operating system boundary configurations."""
-    return PulseService.get_settings(db)
-
+    return EunoiaService.get_settings(db)
+    
 @router.put("/settings", response_model=SystemSettingsOut)
 def update_settings(payload: SystemSettingsUpdate, db: Session = Depends(get_db)):
     """Modifies the active threshold boundaries used by the rules engine."""
-    PulseService.update_settings(db, payload)
-    return PulseService.get_settings(db)
-
+    EunoiaService.get_settings(db)
+    return EunoiaService.update_settings(db, payload)
+    
 @router.post("/shutdown")
 def trigger_shutdown():
     """
