@@ -7,7 +7,7 @@ from app.schemas.schemas import (
     SensorReadingIn, DashboardResponse, AlertItemOut, 
     HistoryEventOut, DeviceInfoOut, SystemSettingsOut, SystemSettingsUpdate
 )
-from app.services.pulse_service import PulseService
+from app.services.Eunoia_service import EunoiaService
 from app.models.models import AlertLog, TelemetryLog
 from app.utils.state_manager import AppStateManager
 
